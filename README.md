@@ -7,7 +7,7 @@ A simple web application that allows you to submit a youtube link and view the e
 This app depends on [django-embed-video](https://github.com/yetty/django-embed-video)
 
 Install django-embed-video:
-  'pip install django-embed-video'
+  `pip install django-embed-video`
 
 ## TODOS
 1. Store videos in the database
