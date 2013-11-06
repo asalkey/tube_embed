@@ -8,7 +8,3 @@ This app depends on [django-embed-video](https://github.com/yetty/django-embed-v
 
 Install django-embed-video:
   `pip install django-embed-video`
-
-## TODOS
-1. Store videos in the database
-2. Display a list of videos

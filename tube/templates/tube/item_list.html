@@ -1,0 +1,8 @@
+<h1> Videos </h1>
+<ul>
+{% for list in object_list %}
+    <li><a href="{% url "show-detail" list.id %}">{{ list.video }} </a></li>
+{% empty %}
+    <li> No videos.</li>
+{% endfor %}
+</ul>

@@ -1,3 +1,5 @@
 .DS_STORE
 /tube/.DS_STORE
+/tube/templates/tube/.DS_STORE
 /tube_embed/.DS_STORE
+db.sqlite3

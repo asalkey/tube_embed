@@ -1,30 +1,19 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.views.generic.edit import CreateView
+from django.views.generic import ListView
+from django.views.generic.detail import DetailView
 from tube.models import Item
 
+class index(CreateView):
+    model = Item
+    fields = ['video']
 
-# Create your views here.
+class List(ListView):
+    model = Item
 
-def index (request):
-  return render(request, 'form.html')
-
-
-def add(request):
-    if request.GET['video']:
-        vid = request.GET['video']
-        return render(request, 'view.html',
-            {'video': vid})
-    else:
-        return HttpResponse('Please submit a search term.')
+class show(DetailView):
+    model = Item
 
 
-# TODO: Add a list of all videos and route individually the view page
-
-#def list (request):
-  #videos = Item
-  #t =loader.get_template('list.html')
-  #c = Context({'videos':videos})
-  #return HttpResponse(t.render(c))
 
 
 
